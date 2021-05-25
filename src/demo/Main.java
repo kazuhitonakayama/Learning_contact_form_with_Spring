@@ -6,7 +6,6 @@ import entity.Member;
 import service.MemberServiceImpl;
 
 public class Main {
-
 	public static void main(String[] args) {
 		MemberServiceImpl service = new MemberServiceImpl();
 		
@@ -17,5 +16,7 @@ public class Main {
 		for (Member mem : list) {
 			System.out.println(mem.getId() + "," + mem.getName() + "," + mem.getEmail()); // gettterで取得
 		}
+		
+		System.out.println(service.sumOf(3,5));
 	}
 }
