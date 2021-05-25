@@ -6,8 +6,8 @@ public class Member {
 	private String email;
 	// 直接のアクセスはできなくっている
 	
-	public member() {};//constructor idには0,nameにはnullが入るようになる
-	
+	// コンストラクター
+	public Member() {} //constructor idには0,nameにはnullが入るようになる
 	//getter setterは書かない
 	public Member(int id, String name, String email) {
 		// super();
