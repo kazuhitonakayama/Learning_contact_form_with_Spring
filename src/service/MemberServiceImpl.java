@@ -11,6 +11,19 @@ public class MemberServiceImpl implements MemberService {
 		String[] greetings = {"Good morninig","Hello","Good evening"};
 		return greetings[i]; // iの値に応じて、戻り値を異ならせる
 	}
+	
+	@Override
+	public Integer sumOf(int i,int n) {
+		int repeatNumber = Math.abs(i - n);
+		int sum = 0;
+		for (int number = 0;number <= repeatNumber;number++) {
+			sum += (i + number);
+			// 1週目=>3
+			// 2週目=>3+1
+			// 3週目=>3+2
+		}
+		return sum;
+	}
 
 	@Override
 	public ArrayList<Member> getAll() {
