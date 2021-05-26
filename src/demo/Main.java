@@ -7,7 +7,8 @@ import service.MemberServiceImpl;
 
 public class Main {
 	public static void main(String[] args) {
-		MemberServiceImpl service = new MemberServiceImpl();
+//		MemberServiceImpl service = new MemberServiceImpl();
+		MemberServiceImpl service = MemberServiceImpl.getInstance();
 		
 		System.out.println(service.greet(2));
 		
