@@ -13,11 +13,10 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	@Override
-	public Integer sumOf(int i,int n) {
-		int repeatNumber = Math.abs(i - n);
+	public int sumOf(int i,int n) {
 		int sum = 0;
-		for (int number = 0;number <= repeatNumber;number++) {
-			sum += (i + number);
+		for (int number = i;number <= n;number++) {
+			sum += number;
 			// 1週目=>3
 			// 2週目=>3+1
 			// 3週目=>3+2

@@ -10,7 +10,7 @@ public interface MemberService {
 	// またMyBatisのように自動生成をしてくれる
 	String greet(int i);
 	
-	Integer sumOf(int i,int n);
+	int sumOf(int i,int n);
 	
 	ArrayList<Member> getAll(); // Shit ctl O で選択
 }
